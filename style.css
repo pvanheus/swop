@@ -1,3 +1,13 @@
+/**
+ * Theme Name:       swop
+ * Theme URI:        https://github.com/pvanheus/swop
+ * Version:          0.2.0
+ * Description:      SWOP Website Theme
+ * Author:           Peter van Heusden
+ * GitHub Theme URI: https://github.com/pvanheus/swop
+ * Primary Branch:   main
+ */
+
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html, body {
   color: #1d1d1b;
