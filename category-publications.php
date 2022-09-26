@@ -8,9 +8,6 @@ get_header();
       <div class="row nopadsides">
         <div class="col-sm-12">
           <h1 class="main-heading">Our publications</h1>
-          <p>
-          This is a brief blurb containing an overview of the publications.
-          <br /><br />
           </p>
         </div>
       </div>
