@@ -22,9 +22,9 @@
     </p>
   </div>
   <div class="col-md-6 nopad social">
-    <a href="#"><i class="fab fa-facebook"></i> </a>
-    <a href="#"><i class="fab fa-instagram"></i> </a>
-    <a href="#"><i class="fab fa-twitter"></i> </a>
+    <a href="https://www.facebook.com/SWOPInstitute/" target="_blank"><i class="fab fa-facebook"></i> </a>
+    <a href="https://www.instagram.com/societyworkandpolitics/?hl=en" target="_blank"><i class="fab fa-instagram"></i> </a>
+    <a href="https://twitter.com/swopinstitute" target="_blank"><i class="fab fa-twitter"></i> </a>
   </div>
 </div>
 </div>
