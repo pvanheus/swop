@@ -65,8 +65,10 @@ get_header();
             <?php
       				$args = array(
       					'category_name' => 'events',
-                'posts_per_page' => 3,
-                'order' => 'DESC'
+                        'posts_per_page' => 3,
+                        'order' => 'DESC',
+                        'orderby' => 'meta_value',
+                        'meta_key' => 'date'
       				);
       				$homepageEvents = new WP_Query($args);
       				if($homepageEvents->have_posts()) :
