@@ -156,3 +156,4 @@ function insert_fb_in_head() {
 ";
 }
 add_action( 'wp_head', 'insert_fb_in_head', 5 );
+

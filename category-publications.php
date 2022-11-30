@@ -12,8 +12,24 @@ get_header();
         </div>
       </div>
 
-      <div class="row main-body equal nopad">
+<!--      <div class="row main-body equal nopad">-->
+<!---->
+<!--      --><?php
+//
+//        $cat = get_category( get_query_var('cat'));
+//        $cat_id = $cat->cat_ID;
+//        $child_categories = get_categories(
+//            array('parent' => $cat_id)
+//        );
+//
+//        foreach ($child_categories as $child) { ?>
+<!--            <div class="col-md-3 pubs-col bgblack-30">-->
+<!--                --><?php //echo "$child->cat_name" ?>
+<!--            </div>-->
+<!--        --><?php //} ?>
+<!--      </div>-->
 
+      <div class="row main-body equal nopad">
         <div class="col-md-3 pubs-col bgblack-10">
           <h2 class="pubs-heading">SWOP working papers</h2>
 
@@ -31,7 +47,6 @@ get_header();
                 $count++;
 
           ?>
-
           <?php if ($count < 4):?>
           <div class="pubs-box">
             <div class="row">
@@ -49,15 +64,6 @@ get_header();
               </div>
             </div>
           </div>
-        <?php else: ?>
-          <div class="pubs-box">
-            <div class="row">
-              <div class="col-sm-12">
-                <a href="<?php the_field('link'); ?>"><p class="author-text red-text"><b><?php the_title(); ?></b></p></a>
-                <p class="author-text"><?php the_field('authors'); ?></p>
-              </div>
-            </div>
-          </div>
         <?php endif; ?>
 
           <?php
@@ -66,8 +72,20 @@ get_header();
           ?>
         <?php endif; ?>
 
+        <div class="pubs-box">
+            <div class="row">
+                <div class="col-sm-12 download-button-holder">
+                    SWOP has published <?php echo($papers->found_posts) ?> working papers.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 download-button-holder">
+                    <a href="<?php echo(get_category_link(get_cat_ID('SWOP Working Papers'))); ?>" class="download-button">Read more</a>
+                </div>
+            </div>
         </div>
 
+        </div>
 
 
         <div class="col-md-3 pubs-col bgblack-20">

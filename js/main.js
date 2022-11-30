@@ -3,6 +3,7 @@ $(document).ready(function($){
 
   $(".rp-section").hide();
   $("#project-section-overview").show();
+  $('#project-section-1').show();
 
   $(".project-nav").click(function(){
     $(".rp-section").hide();

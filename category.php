@@ -6,6 +6,13 @@ used for displaying a sub-category of programmes, e.g. 'transition from coal'
 
 
 <div id="main">
+    <div class="breadcrumbs" typeof="BreadcumbList" vocab="https://schema.org">
+        <?php
+        if (function_exists('bcn_display')) {
+            bcn_display();
+        }
+        ?>
+    </div>
   <div class="row nopadsides">
     <div class="col-sm-12">
       <?php
@@ -61,7 +68,7 @@ used for displaying a sub-category of programmes, e.g. 'transition from coal'
     );
     $count = 1;
 
-    foreach ($child_categories as $child) {?>
+    foreach ($child_categories as $child) { ?>
       <div class="row rp-section" id="project-section-<?php echo $count; ?>">
         <div class="col-sm-12">
           <h3 class="main-heading red-text"><?php echo $child->name ?></h3>

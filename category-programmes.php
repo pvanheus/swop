@@ -7,9 +7,6 @@ get_header();
   <div class="row nopadsides">
     <div class="col-sm-12">
       <h1 class="main-heading">Research projects and programmes</h1>
-      <p>
-      This is a brief blurb containing an overview of the projects/programmes.
-      </p>
     </div>
   </div>
 

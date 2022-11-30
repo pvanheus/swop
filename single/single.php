@@ -7,8 +7,14 @@ get_header();
       <div id="main">
 
         <div class="row nopad">
+            <div class="breadcrumbs" typeof="BreadcumbList" vocab="https://schema.org">
+                <?php
+                if (function_exists('bcn_display')) {
+                    bcn_display();
+                }
+                ?>
+            </div>
           <div class="col-md-12 nopad">
-
 						<?php
 						// Must be inside a loop.
 

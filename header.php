@@ -40,7 +40,7 @@
         <div class="row top-bar nopad">
           <div class="col-md-2 col-xs-12">
             <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="logo hidemobile" /></a>
-            <center><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="logo showmobile" /></center>
+            <center><a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="logo showmobile" /></a></center>
           </div>
           <div class="col-md-12 hidemobile nopad">
             <div class="nav">
@@ -77,6 +77,7 @@
               <a href="https://www.facebook.com/SWOPInstitute/" target="_blank"><i class="fab fa-facebook"></i> </a>
               <a href="https://www.instagram.com/societyworkandpolitics/?hl=en" target="_blank"><i class="fab fa-instagram"></i> </a>
               <a href="https://twitter.com/swopinstitute" target="_blank"><i class="fab fa-twitter"></i> </a>
+              <a href="https://www.youtube.com/user/SWOPInstitute" target="_blank"><i class="fab fa-youtube"></i></a>
 
               <div class="search-container">
                 <?php get_search_form(); ?>

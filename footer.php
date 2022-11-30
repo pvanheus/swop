@@ -25,6 +25,7 @@
     <a href="https://www.facebook.com/SWOPInstitute/" target="_blank"><i class="fab fa-facebook"></i> </a>
     <a href="https://www.instagram.com/societyworkandpolitics/?hl=en" target="_blank"><i class="fab fa-instagram"></i> </a>
     <a href="https://twitter.com/swopinstitute" target="_blank"><i class="fab fa-twitter"></i> </a>
+    <a href="https://www.youtube.com/user/SWOPInstitute" target="_blank"><i class="fab fa-youtube"></i></a>
   </div>
 </div>
 </div>
