@@ -20,8 +20,13 @@ get_header();
         array('parent' => $cat_id)
     );
 
-    foreach ( $child_categories as $child ) {?>
-
+    $count = 0;
+    foreach ( $child_categories as $child ) {
+        if ($count == 4) {
+            ?><hr class="mt-3 mb-3" style="border-top: 2px solid;"/><?
+        }
+        $count++;
+        ?>
       <div class="col-sm-12 col-md-6 nopadsides">
 
         <div class="research-box" style="background-image:url('<?php echo z_taxonomy_image_url($child->term_id); ?>');">

@@ -1,5 +1,10 @@
 <?php
-get_header();
+$categories = wp_get_post_categories(get_the_ID());
+if (post_in_category_named("people", $categories)) {
+    include('single-cat-people.php');
+    exit;
+} else {
+    get_header();
 ?>
 
 
@@ -17,14 +22,12 @@ get_header();
           <div class="col-md-12 nopad">
 						<?php
 						// Must be inside a loop.
-
 						if ( has_post_thumbnail() ):
 							?>
 							<div style="background-image:url('<?php echo the_post_thumbnail_url('full'); ?>');" class="bg-header"></div>
 						<?php
 						endif;
 						?>
-
           </div>
         </div>
 
@@ -44,3 +47,4 @@ get_header();
 
       <?php
       get_footer();
+}

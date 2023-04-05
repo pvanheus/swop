@@ -25,12 +25,12 @@ get_header();
 
     <div class="row">
         <?php while ( $papers->have_posts() ) : $papers->the_post(); ?>
-            <div class="col-sm-6 my-sm-4">
+            <div class="shadow col-sm-6 my-sm-4">
                 <div class="row">
                     <div class="col-sm-5">
                         <?php the_post_thumbnail('medium') ; ?>
                     </div>
-                    <div class="col-sm-7"
+                    <div class="shadow col-sm-7"
                         <h3 class="pub-title"><?php the_title(); ?></h3>
                         <p class="author-text"><?php the_field('authors'); ?></p>
                     </div>

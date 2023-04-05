@@ -64,7 +64,9 @@ get_header();
                           <div style="background-image:url('<?php echo the_post_thumbnail_url('full'); ?>')" class="bg-header"></div>
                         </a>
                         <a href="<?php the_permalink() ?>"><h4><?php echo the_title() ?></h4></a>
-                        <p><?php echo the_excerpt() ?></p>
+                        <p><h3><?php echo the_field('position') ?></h3></p>
+
+                          <p><?php echo the_excerpt() ?></p>
                       </div>
         							<?php
         						endwhile;

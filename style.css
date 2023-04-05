@@ -570,3 +570,8 @@ a {
     font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/* for Zotpress  - this impacts *all* Zotpress entries though */
+.zp-Entry {
+  margin: 0 .4em 1em 1.5em !important;
+}

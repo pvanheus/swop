@@ -157,3 +157,12 @@ function insert_fb_in_head() {
 }
 add_action( 'wp_head', 'insert_fb_in_head', 5 );
 
+function post_in_category_named( $name, $categories ){
+    foreach ( (array) $categories as $cat ) {
+        $catinfo = get_category($cat);
+        // get_term_children() accepts integer ID only
+        if ( $catinfo && ($catinfo->name == $name || $catinfo->slug) )
+            return true;
+    }
+    return false;
+}
