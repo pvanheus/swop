@@ -23,7 +23,11 @@ get_header();
     $count = 0;
     foreach ( $child_categories as $child ) {
         if ($count == 4) {
-            ?><hr class="mt-3 mb-3" style="border-top: 2px solid;"/><?
+            ?>
+            <hr class="mt-3 mb-3" style="border-top: 2px solid;"/>
+            <h2>Features</h2>
+            <hr class="pt-0 mt-0 mb-3" style="border-top: 1px solid;"/>
+            <?
         }
         $count++;
         ?>

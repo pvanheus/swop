@@ -11,11 +11,15 @@ while (have_posts()) : ?>
     <?php the_post(); ?>
     <div class="row main-body nopadsides">
         <div class="breadcrumbs" typeof="BreadcumbList" vocab="https://schema.org">
+<!--            --><?php
+//            if (function_exists('bcn_display')) {
+//                bcn_display();
+//            }
+//            ?>
             <?php
-            if (function_exists('bcn_display')) {
-                bcn_display();
-            }
-            ?>
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }?>
         </div>
         <div class="col-sm-4">
             <img src="<?php echo the_post_thumbnail_url("full"); ?>" class="event-pic-big"/>

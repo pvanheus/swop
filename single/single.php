@@ -13,11 +13,15 @@ if (post_in_category_named("people", $categories)) {
 
         <div class="row nopad">
             <div class="breadcrumbs" typeof="BreadcumbList" vocab="https://schema.org">
+<!--                --><?php
+//                if (function_exists('bcn_display')) {
+//                    bcn_display();
+//                }
+//                ?>
                 <?php
-                if (function_exists('bcn_display')) {
-                    bcn_display();
-                }
-                ?>
+                if ( function_exists('yoast_breadcrumb') ) {
+                    yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+                }?>
             </div>
           <div class="col-md-12 nopad">
 						<?php

@@ -7,11 +7,15 @@ used for displaying a sub-category of programmes, e.g. 'transition from coal'
 
 <div id="main">
     <div class="breadcrumbs" typeof="BreadcumbList" vocab="https://schema.org">
-        <?php
-        if (function_exists('bcn_display')) {
-            bcn_display();
-        }
-        ?>
+<!--        --><?php
+//        if (function_exists('bcn_display')) {
+//            bcn_display();
+//        }
+//        ?>
+       <?php
+        if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }?>
     </div>
   <div class="row nopadsides">
     <div class="col-sm-12">
