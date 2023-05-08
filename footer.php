@@ -18,7 +18,9 @@
   <div class="col-md-6 nopad">
     <p class="verso">
       <b>SWOP | Society, Work and Politics Institute</b><br />
-      t: +27 (0) 11 717 4460<br />info@swop.org.za
+      t: +27 (0) 11 717 4460<br />info@swop.org.za<br />
+      Room SH2171, Solomon Mahlangu House, East Campus, University of the Witwatersrand, Braamfontein, Johannesburg, South Africa <br />
+<!--      <i class="fab fa-envelope whiteiconcolor" style="color: white"/> <span class="verso">Society, Work & Politics Institute, University of the Witwatersrand, Private Bag 3, Wits, 2050, South Africa</span>-->
     </p>
   </div>
   <div class="col-md-6 nopad social">
