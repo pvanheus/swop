@@ -44,16 +44,18 @@ get_header();
 
             <?php if ($future_event): ?>
             <div class="row event-box">
-              <div class="col-sm-12 col-md-3">
-                <a href="<?php the_permalink(); ?>"><img class="event-pic" src="<?php the_post_thumbnail_url("full"); ?>" width="100%" /></a>
-              </div>
-              <div class="col-md-1 hidemobile">
-              </div>
-              <div class="col-sm-12 col-md-8">
-                <p class="date-text red-text"><?php the_field('date') ?></p>
-                <a class="no-underline" href="<?php the_permalink(); ?>"><h1 class="event-title"><?php the_title(); ?></h1></a>
-                <?php the_excerpt(); ?>
-              </div>
+                <div class="col-sm-6 nopad">
+                  <a href="<?php the_permalink(); ?>">
+                    <div class="event-pic">
+                      <img src="<?php the_post_thumbnail_url("full"); ?>" class="event-pic"/>
+                    </div>
+                  </a>
+                </div> <!-- col-sm-6 - left column -->
+                <div class="col-sm-6">
+                  <p class="date-text red-text"><?php the_field('date') ?></p>
+                  <a class="no-underline" href="<?php the_permalink(); ?>"><h1 class="event-title-small"><?php the_title(); ?></h1></a>
+                  <?php the_excerpt(); ?>
+                </div> <!-- col-sm-6 - right column -->
             </div>
           <?php endif ?>
             <?php
@@ -95,28 +97,22 @@ get_header();
 
                 <?php if (!$future_event): ?>
 
-                <div class="col-sm-6 nopad">
                 <div class="row event-box-small">
-                  <div class="col-sm-12">
+                  <div class="col-sm-6 nopad">
                     <a href="<?php the_permalink(); ?>">
-                      <div>
-                        <div class="event-pic-small" style="background-image:url('<?php the_post_thumbnail_url("full"); ?>');"></div>
+                      <div class="event-pic">
+                        <img src="<?php the_post_thumbnail_url("full"); ?>" class="event-pic"/>
                       </div>
-                  </div>
-                  <div class="col-sm-12">
+                    </a>
+                  </div> <!-- col-sm-6 - left column -->
+                  <div class="col-sm-6">
 
-                    <div class="col-sm-12 col-md-3">
-                    </div>
-                    <div class="col-md-1 hidemobile">
-                    </div>
-                    <div class="col-sm-12 col-md-8">
+
                       <p class="date-text red-text"><?php the_field('date') ?></p>
                       <a class="no-underline" href="<?php the_permalink(); ?>"><h1 class="event-title-small"><?php the_title(); ?></h1></a>
                       <?php the_excerpt(); ?>
-                    </div>
-                  </div>
+                  </div> <!-- col-sm-6 - right column -->
                 </div>
-              </div>
               <?php endif ?>
                 <?php
                   endwhile;

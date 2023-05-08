@@ -92,7 +92,7 @@ get_header();
         </div>
 
         <div class="col-md-4 bgblack-30 section-container">
-<!--            <div class="row">-->
+            <div>
                 <h2 class="frontpage-subheading">Recent publications</h2>
                 <?php
                 $args = array(
@@ -124,8 +124,8 @@ get_header();
                     endwhile;
                 endif;
                 ?>
-<!--            </div>-->
-<!--            <div class="row">-->
+            </div>
+            <div class="bgblack-30">
                 <h2 class="frontpage-subheading red-border-top">Open calls</h2>
                 <?php
                 $args = array(
@@ -161,7 +161,7 @@ get_header();
                     endwhile;
                 endif;
                 ?>
-<!--            </div>-->
+            </div>
         </div>
 
     </div>
