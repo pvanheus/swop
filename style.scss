@@ -319,6 +319,16 @@ a{
   color:$red;
   font-family: $body-font;
 }
+
+a.project-nav {
+  text-decoration: none;
+}
+
+a.project-nav-highlight {
+  font-weight: bold;
+  font-style: italic;
+}
+
 .showmobile{
   display: none;
 }

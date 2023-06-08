@@ -7,6 +7,7 @@ if (post_in_category_named("people", $categories)) {
     get_header();
 ?>
 
+    <!-- this is an unclassified post -->
 
       <!-- main -->
       <div id="main">

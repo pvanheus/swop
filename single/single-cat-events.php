@@ -2,6 +2,7 @@
 get_header();
 ?>
 
+    <!-- this is an people post -->
 
       <!-- main -->
       <div id="main">

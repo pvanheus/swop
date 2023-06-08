@@ -5,28 +5,34 @@ get_header();
 
     <!-- main -->
     <div id="main">
-
+    <!-- this is an events post -->
 <?php
 while (have_posts()) : ?>
     <?php the_post(); ?>
-    <div class="row main-body nopadsides">
-        <div class="breadcrumbs" typeof="BreadcumbList" vocab="https://schema.org">
-<!--            --><?php
-//            if (function_exists('bcn_display')) {
-//                bcn_display();
-//            }
-//            ?>
+        <div class="row main-body nopadsides">
+            <div class="breadcrumbs" typeof="BreadcumbList" vocab="https://schema.org">
+                <?php
+                if (function_exists('yoast_breadcrumb')) {
+                    yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+                } ?>
+            </div>
+        <?php
+        $url = get_the_post_thumbnail_url(null, "full");
+        if ($url != "") {
+            $content_col_class = "col-sm-7";
+
+            ?>
+            <div class="col-sm-4">
+                <img src="<?php echo $url ?>" class="event-pic-big"/>
+            </div>
+            <div class="col-sm-1"></div>
             <?php
-            if ( function_exists('yoast_breadcrumb') ) {
-                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-            }?>
-        </div>
-        <div class="col-sm-4">
-            <img src="<?php echo the_post_thumbnail_url("full"); ?>" class="event-pic-big"/>
-        </div>
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-7">
+        } else {
+            $content_col_class = "col-sm-12";
+        }
+        ?>
+
+        <div class="<?php echo $content_col_class; ?>">
             <h1 class="main-heading red-text"><?php the_title(); ?></h1>
             <h3><?php the_field('position') ?></h3>
             <p>
@@ -48,7 +54,7 @@ while (have_posts()) : ?>
                 <?php
             }
             ?>
-        </div>
+        </div> <!-- end content column -->
     </div>
 <?php
 endwhile;

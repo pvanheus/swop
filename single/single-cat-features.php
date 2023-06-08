@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+	<!-- this is a features post -->
 
 	<div id="primary" class="content-area">
 				<div id="main">

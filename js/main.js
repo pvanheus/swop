@@ -7,6 +7,9 @@ $(document).ready(function($){
 
   $(".project-nav").click(function(){
     $(".rp-section").hide();
+    $(".project-nav").removeClass("project-nav-highlight");
+    $(this).addClass("project-nav-highlight");
+    console.log("selected" + $(this).attr("data-info").toString());
     $("#project-section-"+$(this).attr("data-info")).show();
   });
 
